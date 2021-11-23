@@ -9,21 +9,39 @@
   </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row" >
               <div class="col-sm-4">
-                <img src="images/shipping.png"/>
-                <span>Free shipping<br/>
-                 When order over $75</span>
+                <div class="row" >
+                  <div class="col-xs-4">
+                    <img src="images/shipping.png"/>
+                  </div>
+                  <div class="col-xs-8 text-center" style="padding-top:14px; padding-right:5px">
+                    <span>Free shipping<br/>
+                    When order over $75</span>
+                  </div>
+                </div>
+              </div>
+                <div class="col-sm-4">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <img src="images/phone.png"/>
+                    </div>
+                    <div class="col-xs-8 text-center" style="padding-top:14px;padding-right:5px">
+                      <span>24/7 Support<br/>
+                      Get support all day</span>
+                    </div>
+                 </div>
               </div>
               <div class="col-sm-4">
-                <img src="images/phone.png"/>
-                <span>24/7 Support<br/>
-                 Get support all day</span>
-              </div>
-              <div class="col-sm-4" id="refund">
-                <img src="images/refund.png"/>
-                <span>Refund<br/>
-                 Get refund within 3 days</span>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <img src="images/refund.png"/>
+                  </div>
+                  <div class="col-xs-8 text-center padding-top" style="padding-right:5px">
+                    <span>Refund<br/>
+                    Get refund within 3 days</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -34,15 +52,45 @@
       img{
         float:left;
       }
-      
-      .col-sm-4 {
-        text-align: center;
-      }
       @media screen and (max-width:768px)
       {
+        .padding-top{
+          padding-top: 8px;
+        }
         .col-sm-4{
           display: inline-block;
         }
+      }
+      @media screen and (min-width:767px)
+      {
+        .padding-top{
+          padding-top: 7px;
+        }
+      }
+      @media screen and (max-width:252px)
+      {
+
+        .col-xs-4{
+          margin-left: 80px;
+          margin-right:50px;
+        }
+        .col-xs-8{
+          margin-left: 55px;
+          margin-right:50px;
+        }
+      }
+
+      @media screen and (min-width:992px)
+      {
+        .col-xs-8{
+          width:104.9px;
+        }
+        .padding-top{
+          padding-top: 11px;
+        }
+      }
+      @media screen and (min-width:1200px)
+      {
       }
     </style>
 </html>
